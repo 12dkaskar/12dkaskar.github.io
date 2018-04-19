@@ -29,7 +29,7 @@
 						<li><a href="#two">Things I am passionate about</a></li>
 						<!-- <li><a href="#three">A Few Accomplishments</a></li> -->
 						<li><a href="#four">Services I Offer</a></li>
-						<li><a href="#five">Contact</a></li>
+						<!-- <li><a href="#five">Contact</a></li> -->
 					</ul>
 				</nav>
 				<footer>
@@ -147,23 +147,23 @@
 										</tr>
 									  </table>
 									  <footer>
-										  1st installment to be paid at the time of admission.
+										  <ul><li>1st installment to be paid at the time of admission.</li><li>Batch start on 23rd April, 2018</li></ul>
 									  </footer>
 								</div>
 							</section>
 
 						<!-- five -->
-							<section id="five">
+							<!-- <section id="five">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>For any queries feel free to contact me</p>
-									<form method="post" action="#">
+									<form id="contact_us">
 										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+											<div class="6u 12u(xsmall)"><input type="text" name="email" id="email" placeholder="Email/Contact No" required /></div>
 										</div>
 										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" required /></div>
 										</div>
 										<div class="row uniform">
 											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
@@ -171,14 +171,14 @@
 										<div class="row uniform">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message" /></li>
+													<li><input type="submit"  class="special" value="Send Message" /></li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
 										</div>
 									</form>
 								</div>
-							</section>
+							</section> -->
 
 						<!-- Five -->
 						<!--
@@ -533,6 +533,7 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
+								<li>Contact Me : 8097502086</li>
 								<li>&copy; hometuitions All rights reserved.</li><li>Design & Developed by : Deepti Kaskar</li>
 							</ul>
 						</div>
@@ -548,6 +549,21 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+				$( "#contact_us" ).submit(function( event ) {
+					$.ajax(
+						{
+							url: "demo_test.txt", 
+							success: function(result){
+								$("#div1").html(result);
+							},
+							error: function(error){
+								console.log('err', error);
+							}
+						});
+				event.preventDefault();
+				});
+			</script>
 
 	</body>
 </html>
