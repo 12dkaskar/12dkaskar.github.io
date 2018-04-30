@@ -2635,6 +2635,8 @@
 			}
 
 				#footer .copyright li:first-child {
+					color: #4acaa8;
+					font-size: 20px;
 					border-left: 0;
 					margin-left: 0;
 					padding-left: 0;
