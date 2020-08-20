@@ -24,7 +24,7 @@
 			$body.removeClass('is-preload');
 		}, 100);
 		if (matchMedia("(max-width: 700px)").matches) {
-			$('#svgfile').addClass('mb2')
+			$('#svgfile').addClass('mb10')
 			$('#svgfile').load('./images/mobileLogo.svg');
 
 		} else {
