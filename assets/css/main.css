@@ -210,6 +210,10 @@ input, select, textarea {
 				width: calc(100% - 40px);
 			}
 
+			#logo h1 {
+				font-size: 1.2em !important;
+			}
+
 		}
 
 /* Row */
