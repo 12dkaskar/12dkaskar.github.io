@@ -3015,7 +3015,7 @@ html {
   position: absolute;
   /* top: 50%;
   left: 50%; */
-  top:23%;
+  top:15%;
   left:17%;
   transform: translate(-50%, -50%);
   animation: animation--loading 15s ease-in-out infinite forwards;
