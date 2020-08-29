@@ -26,9 +26,27 @@
 		if (matchMedia("(max-width: 700px)").matches) {
 			$('#svgfile').addClass('mb10')
 			$('#svgfile').load('./images/mobileLogo.svg');
+			
+			// css changes for mobile view
+			$("#svgfile").css("position", "absolute");
+			$("#svgfile").css("left", "11%");
+			$("#svgfile").css("top", "28%");
+
+
+			$(".loading").css("position", "absolute");
+			$(".loading").css("left", "17%");
+			$(".loading").css("top", "15%");
+			$(".loading").css("top", "15%");
+			$(".loading").css("width", "0.8em");
+			$(".loading").css("height", "0.8em");
+			
+
 
 		} else {
 			$('#svgfile').addClass('mb20')
+			$("#svgfile").css("position", "absolute");
+			$("#svgfile").css("left", "14%");
+			$("#svgfile").css("top", "43%");
 			$('#svgfile').load('./images/desktopLogo.svg');
 		}
 	});

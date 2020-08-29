@@ -213,6 +213,11 @@ input, select, textarea {
 			#logo h1 {
 				font-size: 1.2em !important;
 			}
+			#logo{
+				/* added for mobile banner changes */
+				padding-left: 14em !important;
+				padding-right: 2em !important;
+			}
 
 		}
 
