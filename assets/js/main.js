@@ -72,4 +72,21 @@
 			visibleClass: 'navPanel-visible'
 		});
 
+
+	var svg = Snap("#paper");
+	var circ = svg.circle(0, 1, 1)
+		.attr({ fill: "rgba(0,255,255,.5)" })
+		.pattern(0, 0, 5, 5)
+		.attr({ patternTransform: "rotate(25)" });
+	svg.rect(0, 0, '100%', '100%').attr({ fill: circ });
+
+
+	/*
+	 *  
+	 * 
+	 * 
+	 * 2013 by Tim Pietrusky
+	 * timpietrusky.com
+	 */
+
 })(jQuery);
