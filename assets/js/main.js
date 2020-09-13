@@ -26,11 +26,11 @@
 		if (matchMedia("(max-width: 700px)").matches) {
 			$('#svgfile').addClass('mb10')
 			$('#svgfile').load('./images/mobileLogo.svg');
-			
+
 			// css changes for mobile view
 			$("#svgfile").css("position", "absolute");
-			$("#svgfile").css("left", "11%");
-			$("#svgfile").css("top", "28%");
+			$("#svgfile").css("left", "12%");
+			$("#svgfile").css("top", "32%");
 
 
 			$(".loading").css("position", "absolute");
@@ -39,7 +39,7 @@
 			$(".loading").css("top", "15%");
 			$(".loading").css("width", "0.8em");
 			$(".loading").css("height", "0.8em");
-			
+
 
 
 		} else {
